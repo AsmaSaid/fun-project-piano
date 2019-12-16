@@ -42,6 +42,7 @@ const keys = document.querySelectorAll(".key");
 
 keys.forEach(key => {
   key.addEventListener("click", () => playNote(key));
+  key.addEventListener("mouseover", () => playNote(key));
 });
 
 document.addEventListener("keydown", e => {
