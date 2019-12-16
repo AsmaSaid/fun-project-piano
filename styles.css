@@ -5,18 +5,18 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 body {
-  background-color: #143f6b;
+  background-image: linear-gradient(#403075, #882d61);
   margin: 0;
-  color: white;
-  text-align: center;
-  font-family: "Comfortaa", cursive;
-  max-height: 100vh;
+  min-height: 100%;
 }
 
 h1 {
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 1.7em;
 }
 
@@ -41,10 +41,15 @@ a:active {
   color: #333;
 }
 
-.wrapper {
+.text-wrapper {
+  height: 20vh;
+  color: white;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+.piano-wrapper {
   display: flex;
-  min-height: 60vh;
-  max-height: 80vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
 }
@@ -56,12 +61,13 @@ a:active {
   width: var(--width);
   outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .white {
-  --width: 5.5vh;
+  --width: 6vh;
   background-color: white;
-  border: 4px solid black;
+  border: 3px solid black;
   border-radius: 0 0 10px 10px;
 }
 
@@ -70,7 +76,7 @@ a:active {
 }
 
 .black {
-  --width: 3vh;
+  --width: 3.8vh;
   background-image: linear-gradient(#000000, #303030);
   border: 3px solid black;
   border-radius: 0 0 4px 4px;
@@ -84,7 +90,7 @@ a:active {
 }
 
 @media (max-width: 900px) {
-  .wrapper {
+  .piano-wrapper {
     transform: rotate(90deg);
   }
 }
