@@ -34,8 +34,8 @@ const All_KEYS = [
   ",",
   "l",
   ".",
-  "'",
-  "/ "
+  ";",
+  "/"
 ];
 
 const keys = document.querySelectorAll(".key");
